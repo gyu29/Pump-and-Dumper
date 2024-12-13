@@ -1,6 +1,9 @@
 # Pump-and-Dumper
 Solana Pump and Dumper
 
+## Solana Program Documentation for those who wish to modify:  
+https://spl.solana.com/token  
+
 ## Overview
 
 The Solana Token Pump and Dumper is a Python-based script for performing token trading on the Solana blockchain. It supports token swaps, balance monitoring, and auto-trading functionalities like setting profit targets and stop losses.
