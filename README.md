@@ -21,88 +21,69 @@ pip install solana spl-token base58 mnemonic
 ## Installation
 Clone the repository:
 
-`git clone https://github.com/gyu29/Pump-and-Dumper`
-`cd Pump-and-Dumper`
+`git clone https://github.com/gyu29/Pump-and-Dumper`  
+`cd Pump-and-Dumper`  
 
-Install dependencies:
+## Usage
 
-pip install -r requirements.txt
-
-Usage
-
-Command-line Arguments
-
+### Command-line Arguments:
 The script provides the following arguments:
 
---private-key: Base58-encoded private key for wallet access.
+* --private-key: Base58-encoded private key for wallet access.
+* --seed-phrase: Seed phrase for wallet access.
+* --token-mint: Token mint address to trade.
+* --action: Action to perform (buy, sell, or monitor).
+* --amount: Amount of SOL (for buy) or tokens (for sell).
+* --profit-target: Profit percentage to trigger a sell (for monitor action).
+* --stop-loss: Loss percentage to trigger a sell (for monitor action).
+* --interval: Interval in seconds for monitoring (default: 15 seconds).
 
---seed-phrase: Seed phrase for wallet access.
+## Example Commands
 
---token-mint: Token mint address to trade.
+* Buy tokens using SOL:
 
---action: Action to perform (buy, sell, or monitor).
-
---amount: Amount of SOL (for buy) or tokens (for sell).
-
---profit-target: Profit percentage to trigger a sell (for monitor action).
-
---stop-loss: Loss percentage to trigger a sell (for monitor action).
-
---interval: Interval in seconds for monitoring (default: 15 seconds).
-
-Example Commands
-
-Buy tokens using SOL:
-
-python solana_trader_script.py \
+`python main.py \
     --private-key <your_private_key> \
     --token-mint <token_mint_address> \
     --action buy \
-    --amount <amount_in_SOL>
+    --amount <amount_in_SOL>`  
 
-Sell tokens for SOL:
+* Sell tokens for SOL:
 
-python solana_trader_script.py \
+`python main.py \
     --seed-phrase "<your_seed_phrase>" \
     --token-mint <token_mint_address> \
     --action sell \
-    --amount <amount_of_tokens>
+    --amount <amount_of_tokens>`
 
-Monitor token balance with auto-trading:
+* Monitor token balance with auto-trading:
 
-python solana_trader_script.py \
+`python main.py \
     --private-key <your_private_key> \
     --token-mint <token_mint_address> \
     --action monitor \
     --profit-target 50.0 \
     --stop-loss -10.0 \
-    --interval 30
+    --interval 30`
 
 Key Functionalities
 
-Swap Tokens:
-
+* Swap Tokens:
 Execute token swaps using the Raydium AMM program.
 
-Monitor Balances:
-
+* Monitor Balances:
 Continuously check token balances and make trading decisions based on market conditions.
 
-Auto-Trade:
-
+* Auto-Trade:
 Automatically sell tokens when profit targets or stop losses are reached.
 
-Error Handling
-
+* Error Handling
 The script is equipped to handle common errors, such as:
+* Missing token accounts (will automatically create associated token accounts if needed).
+* Insufficient balance errors.
+* RPC connection issues.
 
-Missing token accounts (will automatically create associated token accounts if needed).
-
-Insufficient balance errors.
-
-RPC connection issues.
-
-Notes
+* Notes
 
 Ensure your wallet has sufficient SOL to cover transaction fees.
 
