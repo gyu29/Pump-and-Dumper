@@ -5,26 +5,20 @@ Overview
 
 The Solana Token Trader is a Python-based script for performing token trading on the Solana blockchain. It supports token swaps, balance monitoring, and auto-trading functionalities like setting profit targets and stop losses.
 
-Features
+## Features: 
 
-Swap SOL for tokens and vice versa.
+* Swap SOL for tokens and vice versa.
+* Monitor token balances and trigger auto-trading actions based on profit or loss thresholds.
+* Retrieve balances for SOL and SPL tokens.
+* Supports wallet access using private keys or seed phrases.
 
-Monitor token balances and trigger auto-trading actions based on profit or loss thresholds.
+## Prerequisites:
+* Python 3.8 or higher
 
-Retrieve balances for SOL and SPL tokens.
-
-Supports wallet access using private keys or seed phrases.
-
-Prerequisites
-
-Python 3.8 or higher
-
-Install Required Libraries:
-
+## Install Required Libraries:
 pip install solana spl-token base58 mnemonic
 
-Installation
-
+## Installation
 Clone the repository:
 
 git clone <repository_url>
