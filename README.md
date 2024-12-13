@@ -21,8 +21,8 @@ pip install solana spl-token base58 mnemonic
 ## Installation
 Clone the repository:
 
-git clone <repository_url>
-cd <repository_directory>
+`git clone https://github.com/gyu29/Pump-and-Dumper`
+`cd Pump-and-Dumper`
 
 Install dependencies:
 
