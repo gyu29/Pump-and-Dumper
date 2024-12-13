@@ -16,7 +16,7 @@ The Solana Token Pump and Dumper is a Python-based script for performing token t
 * Python 3.8 or higher
 
 ## Install Required Libraries:
-pip install solana spl-token base58 mnemonic
+`pip install solana spl-token base58 mnemonic`
 
 ## Installation
 Clone the repository:
