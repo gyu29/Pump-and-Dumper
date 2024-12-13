@@ -1,8 +1,7 @@
 # Pump-and-Dumper
 Solana Pump and Dumper
 
-## Solana Program Documentation:  
-### For those who wish to modify  
+### Solana Program Documentation for those who wish to modify:  
 https://spl.solana.com/token  
 
 ## Overview
