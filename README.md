@@ -83,12 +83,11 @@ The script is equipped to handle common errors, such as:
 * Insufficient balance errors.
 * RPC connection issues.
 
-* Notes
+## Notes
 
-Ensure your wallet has sufficient SOL to cover transaction fees.
+* Ensure your wallet has sufficient SOL to cover transaction fees.
 
-Use secure methods to store and pass private keys or seed phrases.
+* Use secure methods to store and pass private keys or seed phrases.
 
-Disclaimer
-
+## Disclaimer
 This software is provided "as is," without warranty of any kind. Use it at your own risk, and always test with small amounts before executing larger trades.
